@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<ht<ml lang="en">
+
+<head>
+ <link rel="stylesheet" href="style.css">
+<P><h1>CEEGAMES</h1></P>
+<P><H3> access to the game world</H3></P>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div class="logo">
+    <img src="C_20250330_020734_0000.png" alt="my logo">
+
+</div>
+
+</head>
+
+<section class="game-list">
+    <h2>Featured Games</h2>
+    <div class="game">
+        <img src="images.jpeg" alt="Game 1">
+        <h3><!--name of game--></h3>
+        <p>Short description of the game...</p>
+        <a href="game1-download-link" class="download-btn">coming soon..</a>
+    </div>
+    <div class="game">
+        <img src="images (1).jpeg" alt="Game 2">
+        <h3><!--name of game--></h3>
+        <p>Exciting gameplay with awesome features...</p>
+        <a href="game2-download-link"  class="download-btn">Download</a>
+    </div>
+
+   <div class="game">
+        <img src="images (3).jpeg" alt="Game 3">
+        <h3><!--name of game--></h3>
+        <p>Exciting gameplay with awesome features...</p>
+        <a href="game3-download-link"  class="download-btn">Download</a>
+   </div>
+</section>
+
+
+<nav>
+    <ul>
+        <li><a href="home.html"></a><button class="button-3d">home</button></a></li>
+        <li><a href="games.html"><button class="button-3d">games</button></a></li>
+        <li><a href="categories.html"><button class="button-3d">categories</button></a></li>
+        <li><a href="contact.html"><button class="button-3d">contact</button></a></li>
+    </ul>
+</nav>
+
+
+
+<div class="search-container">
+    <input type="text" id="search-bar" placeholder="Search for games..." onkeyup="searchGames()">
+    <button class="search-btn" onclick="searchGames()">🔍</button>
+</div>
+
+<div id="game-results"></div>  <!-- Empty, will be filled with games using JS -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Drawer Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+     <!-- Sidebar Menu -->
+     <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="closeMenu()">×</button>
+        <ul>
+            <div class="logos">
+                <img src="C_20250330_020734_0000.png" alt="my logo">
+            
+            <li><a href="#">🏠 Home</a></li>
+            <li><a href="#">👤 Profile</a></li>
+            <li><a href="#">⚙️ Settings</a></li>
+            <li><a href="#">📞 Contact</a></li>
+            <li><a href="#">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay (Covers Everything) -->
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+    <!-- Menu Button -->
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+    
+</div>
+<div class="logo">
+    <img src="C_20250330_020734_0000.png" alt="my logo">
+
+
+    <script src="style.js"></script>
+
+</body>
+</html>
+
+

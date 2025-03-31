@@ -1,0 +1,499 @@
+h1{color: #b1982b;}
+h1{
+    position: absolute;
+    top: 26%;
+    left: 15PX;
+    z-index: 10;
+    
+}
+
+h3{
+    position: absolute;
+    top: 32%;
+    left: 15PX;
+    z-index: 10;
+}
+h3{color: #d3d28a;}
+body{background-image: url("20250330_032106_0000.png");
+      background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
+
+
+}
+ 
+
+ h2 {color:#b1982b;}
+ h2 {
+    background-color: #d1a71b; /* Blue */
+        color: white;
+        padding: 18px 24px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+       
+        width: 110px;
+        height: 50px;
+    }
+
+    
+        h2{
+            
+            transform: translateY(2px);
+        }
+        h2 {
+            background-color: #0c0b0b; /* Green */
+            color: white;
+            padding: 10px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+    }
+     h2{
+        position: absolute;
+        top: 30px;
+        left: 45%;
+
+     }
+    
+ 
+ 
+
+ .logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+ }
+ 
+
+      .logo img{
+        width: 150px;
+        height: 150px ;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        
+    }
+    .logos{
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        z-index: 10;
+     }
+    
+    .logos img{
+        width: 90px;
+        height: 90px ;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .game-list {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .game {
+        display: inline-block;
+        width: 250px;
+        margin: 10px;
+        padding: 15px;
+        background: #222;
+        color: #fff;
+        border-radius: 8px;
+    }
+    
+    .game img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .download-btn {
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        background: orange;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    av {
+        background: #111;
+        padding: 15px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .slider {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .slide {
+        width: 100%;
+        display: none;
+    }
+
+
+
+    .button-3d {
+        background-color: #d1a71b; /* Blue */
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 4px #1f1b06;
+    }
+    .button-3d:active {
+        box-shadow: 0 2px #d1a71b;
+        transform: translateY(2px);
+    }
+    .button-animated {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    .button-animated:hover {
+        transform: scale(1.1); /* Increase size */
+    }
+
+/* Featured Games Section */
+#game-results {
+    text-align: center;
+    margin-top: 80px;
+    display: inline-table;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Adds space between the rectangles */
+    padding: 20px;
+}
+
+/* Game Box - Styled as Rectangular with Animation */
+.game {
+    display: inline-table; /* Keeps the rectangular alignment */
+    width: 200px;  /* Rectangle width */
+    height: 50px; /* Rectangle height */
+    display:inline-table;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Hover Effect */
+.game:hover {
+    background-color: #ff9800; /* Changes color on hover */
+    transform: scale(1.1); /* Makes it slightly bigger */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a glow effect */
+
+}
+
+/* Fade-in Animation when Page Loads */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.game {
+    animation: fadeIn 0.5s ease-in-out; /* Adds fade-in effect */
+}
+
+
+
+/* Search Container */
+.search-container {
+    position: absolute;
+    top: 30px;
+    left:78%;
+    display: inline-table;
+    justify-content: center;
+    margin: 20px auto;
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Search Input */
+#search-bar {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff9800;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+/* Search Button */
+.search-btn {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #e68900;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+header {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.search-filter {
+    text-align: center;
+    padding: 20px;
+}
+
+.search-filter input, .search-filter select {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.game-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e7eb;
+    margin: 150px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.game-card {
+    width: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game-card p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -25%;
+    width: 25%;
+    height: 100vh;
+    background: linear-gradient(135deg, #222, #333);
+    color: white;
+    transition: right 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-align: center;
+    background-image: url("20250330_032106_0000.png");
+      background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    
+    
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+    transition: 0.3s ease-in-out;
+}
+
+/* Menu Button */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1001;
+}
+
+.menu-btn:hover {
+    color: #555;
+}
+
+/* Open Sidebar */
+.sidebar.open {
+    left: 0;
+}
+
+.overlay.show {
+    display: block;
+}
